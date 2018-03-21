@@ -12,6 +12,7 @@
 		1B648E08206290A800E16306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B648E06206290A800E16306 /* Main.storyboard */; };
 		1B648E0A206290A800E16306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B648E09206290A800E16306 /* Assets.xcassets */; };
 		1B648E0D206290A800E16306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B648E0B206290A800E16306 /* LaunchScreen.storyboard */; };
+		1B648E17206291BF00E16306 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B648E16206291BF00E16306 /* BarChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1B648E09206290A800E16306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B648E0C206290A800E16306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B648E0E206290A800E16306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B648E16206291BF00E16306 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				1B648E02206290A700E16306 /* AppDelegate.swift */,
 				1B648E04206290A700E16306 /* ViewController.swift */,
 				1B648E06206290A800E16306 /* Main.storyboard */,
+				1B648E16206291BF00E16306 /* BarChartView.swift */,
 				1B648E09206290A800E16306 /* Assets.xcassets */,
 				1B648E0B206290A800E16306 /* LaunchScreen.storyboard */,
 				1B648E0E206290A800E16306 /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				1B648E05206290A700E16306 /* ViewController.swift in Sources */,
 				1B648E03206290A700E16306 /* AppDelegate.swift in Sources */,
+				1B648E17206291BF00E16306 /* BarChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
