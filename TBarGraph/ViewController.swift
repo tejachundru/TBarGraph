@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        barGraph.barColor = UIColor.black
-        barGraph.valuesArray = [45.65,95.23,45.85,86.56]
+        barGraph.barColors = [UIColor.black,UIColor.green,UIColor.brown]
+        barGraph.valuesArray = [45.65,95.23,45.85,86.56,45.62]
         
         
         
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
        
     }
     @IBAction func animateBar(_ sender: Any) {
-        barGraph.animateBarGraph()
+        
     }
     
     override func didReceiveMemoryWarning() {

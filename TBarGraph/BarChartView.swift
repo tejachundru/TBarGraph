@@ -13,7 +13,7 @@ import CoreGraphics
 class BarChartView : UIView{
     
     var valuesArray:[CGFloat]?
-    var barColor:UIColor?
+    var barColors:[UIColor]?
     
     func animateBarGraph(){
         UIView.animate(withDuration: 1.0) {
@@ -22,21 +22,13 @@ class BarChartView : UIView{
     }
     
     
-    private var noOfBars:CGFloat?{
-        didSet{
-            setNeedsDisplay()
-        }
-    }
-    private var barElementColor:UIColor?{
-        didSet{
-            setNeedsDisplay()
-        }
-    }
+    private var noOfBars:CGFloat?
+    private var barElementColor:UIColor?
     
     override func draw(_ rect: CGRect) {
         
-        if let value = valuesArray?.max(), let barClr = barColor  {
-            barElementColor = barClr
+        if let value = valuesArray?.max() {
+            
             let eachValueX = self.bounds.width/CGFloat((valuesArray?.count)!)
             let maxValue = value
             var newValueArray:[CGFloat] = [CGFloat]()
@@ -45,18 +37,25 @@ class BarChartView : UIView{
                 newValueArray.append(a/maxValue)
             }
             var xValue:CGFloat = eachValueX/2
+            var colorControl:Int = 0
+            
             for modifiedvalue in newValueArray{
+                
+                if (barColors?.count) != nil && (barColors?.count)! > colorControl {
+                    barElementColor = barColors?[colorControl]
+                }else{
+                    barElementColor = UIColor.blue
+                }
                 
                 let path = UIBezierPath()
                 path.move(to: CGPoint(x: xValue, y: self.bounds.height))
                 path.addLine(to: CGPoint(x: xValue, y: self.bounds.height - (self.bounds.width*modifiedvalue)))
-                path.lineWidth = CGFloat(0.7*eachValueX)
+                path.lineWidth = CGFloat(0.8*eachValueX)
                 barElementColor?.setStroke()
                 path.stroke()
                 xValue = xValue+eachValueX
-                
+                colorControl = colorControl+1
             }
         }
     }
-    
 }
