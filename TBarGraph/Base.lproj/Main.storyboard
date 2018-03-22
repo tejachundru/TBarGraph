@@ -10,11 +10,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="AvenirNext.ttc">
-            <string>AvenirNext-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -32,22 +27,10 @@
                                     <constraint firstAttribute="width" secondItem="lP7-bv-fqi" secondAttribute="height" multiplier="1:1" id="mm4-ob-U4d"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQd-m5-VjI">
-                                <rect key="frame" x="139.5" y="545" width="96" height="47"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
-                                <state key="normal" title="Animate">
-                                    <color key="titleColor" red="1" green="0.3108432612" blue="0.0476812177" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="animateBar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RtJ-a5-wtL"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="zQd-m5-VjI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mcc-vT-cSG"/>
                             <constraint firstItem="lP7-bv-fqi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NYF-t4-4RX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zQd-m5-VjI" secondAttribute="bottom" constant="75" id="SOQ-3m-C6f"/>
                             <constraint firstItem="lP7-bv-fqi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pUS-sy-zhc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

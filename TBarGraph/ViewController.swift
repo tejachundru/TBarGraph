@@ -22,9 +22,7 @@ class ViewController: UIViewController {
         
        
     }
-    @IBAction func animateBar(_ sender: Any) {
-        
-    }
+ 
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
