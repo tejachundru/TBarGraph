@@ -15,12 +15,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         barGraph.barColors = [UIColor.black,UIColor.green,UIColor.brown]
-        barGraph.valuesArray = [45.65,95.23,45.85,86.56,45.62]
-        
-        
-        
-        
-       
+        barGraph.valuesArray = [45.2,45.65,95.23,45.85,86.56,45.62]
+
     }
  
     
