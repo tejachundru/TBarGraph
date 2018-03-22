@@ -51,7 +51,7 @@ class BarChartView : UIView{
                 if (barColors?.count) != nil && (barColors?.count)! > colorControl {
                     barElementColor = barColors?[colorControl]
                 }else{
-                    barElementColor = UIColor.blue
+                    barElementColor = defaultBarColor
                 }
                 
                 //Drawing path
